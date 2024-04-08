@@ -1,0 +1,39 @@
+.container {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  border: 2px solid #ff5617;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 250px;
+}
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.approveButton {
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 2px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rejectButton {
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 2px;
+  margin-left: 10px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.paginationSection {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.paginationButton,
+.selectedPage {
+  background: #f3f3f3;
+  border: 1px solid #cdd4d8;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #797979;
+  padding: 4px 0px;
+  width: 30px;
+  text-align: center;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.selectedPage {
+  background: #ff5617;
+  border: none;
+  color: #fff;
+}
+.setPageSizeSection {
+  display: flex;
+  align-items: baseline;
+  margin-left: 25px;
+}
+.setPageSizeText {
+  font-weight: 500;
+  font-size: 14px;
+  color: #797979;
+  margin-right: 5px;
+}
+
+.selectPageSize {
+  border: 1px solid #cdd4d8;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #797979;
+  outline: none;
+  width: 47px;
+}

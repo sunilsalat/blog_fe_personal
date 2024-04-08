@@ -1,0 +1,31 @@
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.logoImg {
+  width: 160px;
+  height: 160px;
+}
+
+.logoImg img {
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuBar {
+  display: flex;
+  justify-items: center;
+  gap: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: rgb(147, 64, 13);
+}

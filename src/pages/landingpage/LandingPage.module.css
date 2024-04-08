@@ -1,0 +1,59 @@
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.catogery {
+  background-color: #ff5617;
+  color: white;
+  padding: 12px 0;
+  font-size: 18px;
+}
+
+.catogeryList {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.catogeryList p::after {
+  content: "";
+  border-right: 2px solid white;
+  padding: 0 20px;
+}
+
+.catogeryList p:last-child::after {
+  content: "";
+  border: 0;
+}
+
+.catogeryList p:hover {
+  color: #5e5e5e;
+}
+
+.categories {
+  cursor: pointer;
+}
+.card {
+  border: 2px solid #ff5617;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 250px;
+}
+.noRecordFound {
+  text-align: center;
+  margin-top: 10px;
+}
+.blogContainer {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}

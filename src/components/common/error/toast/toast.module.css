@@ -1,0 +1,109 @@
+.notificationHide {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  transform: 0.6s ease-in-out;
+  animation: toast-in-left 0.7s;
+  visibility: hidden;
+  z-index: 100;
+}
+.notificationHide > .notification {
+  position: relative;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 10px #999;
+  opacity: 0.9;
+  width: 100%;
+}
+.notificationHide > .notification > .notificationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+}
+.notificationHide > .notification > .notificationHeader > .title {
+  display: flex;
+  align-items: center;
+}
+.notificationHide > .notification > .notificationHeader > .image {
+  margin-right: 5px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+.notificationHide > .notification > .notificationHeader > .notificationTitle {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  font-size: var(--XSmall);
+  margin-top: 0;
+  width: 100px;
+  min-width: 300px;
+}
+
+.notificationShow {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 100;
+  transform: 0.6s ease-in-out;
+  animation: toast-in-right 0.7s;
+}
+
+.notificationShow > .notification {
+  position: relative;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 10px #999;
+  opacity: 0.9;
+  width: 100%;
+  z-index: 100;
+}
+
+.notificationShow > .notification > .notificationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white1);
+  padding: 10px;
+}
+.notificationShow > .notification > .notificationHeader > .title {
+  display: flex;
+  align-items: center;
+}
+.notificationShow > .notification > .notificationHeader > .image {
+  margin-right: 5px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+.notificationShow > .notification > .notificationHeader > .notificationTitle {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 0;
+  width: 100%;
+  min-width: 300px;
+}
+
+@keyframes toast-in-right {
+  from {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  to {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes toast-in-left {
+  from {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+}
